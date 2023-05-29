@@ -1,3 +1,50 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006eff;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  /* Logo or brand */
+  .navbar-logo {
+    /* Add your logo styles here */
+  }
+  
+  /* Links container */
+  .navbar-links {
+    display: flex;
+  }
+  
+  /* Individual link */
+  .navbar-link {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Navbar icons container */
+  .navbar-icons {
+    display: flex;
+  }
+  
+  /* Icon button */
+  .navbar-icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  
 .search-container {
     width: 400px;
     margin: 50px auto;
