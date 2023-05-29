@@ -1,60 +1,63 @@
-<nav class="navbar">
-    <div class="navbar-logo">
-      <!-- Add your logo or brand name here -->
+<div id="section1">
+        <nav class="navbar">
+      <div class="navbar-logo">
+        <!-- Add your logo or brand name here -->
+      </div>
+      <div class="navbar-icons">
+        <button class="navbar-icon-btn">
+          <i class="fas fa-map-marker-alt"></i>
+        </button>
+        <button class="navbar-icon-btn">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="navbar-hamburger-btn" (click)="toggleSubMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navbar-submenu" [ngClass]="{'show': showSubMenu}">
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+          <li>
+            <a href="#">Link 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="search-container">
+      <div class="search-input">
+        <label for="origin">Origin:</label>
+        <input type="text" id="origin" name="origin" placeholder="Enter origin airport" required>
+      </div>
+      <div class="search-input">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter destination airport" required>
+      </div>
+      <div class="search-input">
+        <label for="departure">Departure:</label>
+        <input type="date" id="departure" name="departure" required>
+      </div>
+      <div class="search-input">
+        <label for="return">Return:</label>
+        <input type="date" id="return" name="return">
+      </div>
+      <div class="search-input">
+        <label for="passengers">Passengers:</label>
+        <select id="passengers" name="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="search-input">
+        <button type="submit">Search</button>
+      </div>
     </div>
-    <div class="navbar-links">
-      <a href="#" class="navbar-link">Link 1</a>
-      <a href="#" class="navbar-link">Link 2</a>
-      <a href="#" class="navbar-link">Link 3</a>
-    </div>
-    <div class="navbar-icons">
-      <button class="navbar-icon-btn">
-        <i class="fas fa-map-marker-alt"></i>
-      </button>
-      <button class="navbar-icon-btn">
-        <i class="fas fa-user"></i>
-      </button>
-      <button class="navbar-icon-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>   
-<div class="search-container">
-    <h1>Skyscanner Flight Search</h1>
-    <form>
-      <div class="input-group">
-        <label for="origin">From</label>
-        <input type="text" id="origin" placeholder="Enter origin airport" required>
-        <div class="autocomplete-results">
-          <!-- Autocomplete results here -->
-        </div>
-      </div>
-      <div class="input-group">
-        <label for="destination">To</label>
-        <input type="text" id="destination" placeholder="Enter destination airport" required>
-        <div class="autocomplete-results">
-          <!-- Autocomplete results here -->
-        </div>
-      </div>
-      <div class="input-group">
-        <label for="departure">Departure</label>
-        <input type="text" id="departure" class="datepicker" placeholder="Select departure date" required>
-      </div>
-      <div class="input-group">
-        <label for="return">Return</label>
-        <input type="text" id="return" class="datepicker" placeholder="Select return date">
-      </div>
-      <div class="input-group">
-        <label for="passengers">Passengers</label>
-        <input type="text" id="passengers" placeholder="Select number of passengers" required>
-        <div class="passengers-dropdown">
-          <!-- Passengers dropdown here -->
-        </div>
-      </div>
-      <button type="submit">Search Flights</button>
-    </form>
-  </div>
-  <footer>
+</div>
+<footer>
     <div class="footer-container">
       <div class="footer-links">
         <a href="#">About</a>
@@ -66,5 +69,5 @@
         <img src="skyscanner-logo.png" alt="Skyscanner Logo">
       </div>
     </div>
-  </footer>
+</footer>
   

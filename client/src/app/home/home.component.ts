@@ -29,4 +29,10 @@ export class HomeComponent implements OnInit {
     // Perform search logic
     console.log('Search form submitted:', this.searchForm.value);
   }
+  showSubMenu: boolean = false;
+
+  toggleSubMenu() {
+    this.showSubMenu = !this.showSubMenu;
+  }
 }
+
